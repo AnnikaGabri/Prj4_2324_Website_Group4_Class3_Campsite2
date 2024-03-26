@@ -174,44 +174,19 @@
         <input type="text" id="searchInput" placeholder="Search for a location">
         <button onclick="searchLocation()">Search</button>
     </div>
-    <script>
-        function searchLocation() {
-            var input = document.getElementById('searchInput').value;
-            var geocoder = new google.maps.Geocoder();
-            geocoder.geocode({ 'address': input }, function (results, status) {
-                if (status == google.maps.GeocoderStatus.OK) {
-                    var latitude = results[0].geometry.location.lat();
-                    var longitude = results[0].geometry.location.lng();
-                    var setting = {
-                        "query": input,
-                        "width": 1920,
-                        "height": 1400,
-                        "satellite": false,
-                        "zoom": 10,
-                        "placeId": results[0].place_id,
-                        "cid": "0xb90f770693656e38",
-                        "coords": [latitude, longitude],
-                        "lang": "nl",
-                        "queryString": input,
-                        "centerCoord": [latitude, longitude],
-                        "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
-                        "embed_id": "1087594"
-                    };
-                    var script = document.createElement('script');
-                    script.src = 'https://1map.com/js/script-for-user.js?embed_id=1087594';
-                    script.async = true;
-                    script.onload = function (e) {
-                        window.OneMap.initMap(setting);
-                    };
-                    var firstScript = document.getElementsByTagName('script')[0];
-                    firstScript.parentNode.insertBefore(script, firstScript);
-                } else {
-                    alert('Geocode was not successful for the following reason: ' + status);
-                }
-            });
-        }
-    </script>
-    <a href="https://1map.com/nl/map-embed">1 Map</a>     
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"query":"Rome, Italië","width":1920,"height":1400,"satellite":false,"zoom":4,"placeId":"ChIJu46S-ZZhLxMROG5lkwZ3D7k","cid":"0xb90f770693656e38","coords":[41.9027835,12.4963655],"lang":"nl","queryString":"Rome, Italië","centerCoord":[41.9027835,12.4963655],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1087594"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=1087594';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/nl/map-embed">1 Map</a></div>  
     <!-- map End -->
 
 
