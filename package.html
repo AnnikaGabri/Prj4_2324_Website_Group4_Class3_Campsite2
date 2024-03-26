@@ -164,32 +164,25 @@
             <div class="container pb-5">
                 <div class="bg-light shadow" style="padding: 30px;">
                     <div class="row align-items-center" style="min-height: 60px;">
-                        <div class="col-md-10">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3 mb-md-0">
-                                        <select id="destination" class="custom-select px-4" style="height: 47px;">
-                                            <option selected disabled>Destination</option>
-                                            <option value="41.9027835,12.4963655">Italy, Rome</option>
-                                            <!-- Add more destinations as needed -->
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3 mb-md-0">
-                                        <select id="routes" class="custom-select px-4" style="height: 47px;">
-                                            <option selected>Routes</option>
-                                            <option value="1">Your routes</option>
-                                            <option value="2">Following Routes</option>
-                                            <option value="3">Explore routes</option>
-                                            <!-- Add more routes as needed -->
-                                        </select>
-                                    </div>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="mb-3 mb-md-0">
+                                <select id="destination" class="custom-select px-4" style="height: 47px;">
+                                    <option selected disabled>Destination</option>
+                                    <option value="41.9027835,12.4963655">Italy, Rome</option>
+                                    <!-- Add more destinations as needed -->
+                                </select>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <button id="submit" class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
+                        <div class="col-md-6">
+                            <div class="mb-3 mb-md-0">
+                                <select id="routes" class="custom-select px-4" style="height: 47px;">
+                                    <option selected>Routes</option>
+                                    <option value="1">Your routes</option>
+                                    <option value="2">Following Routes</option>
+                                    <option value="3">Explore routes</option>
+                                    <!-- Add more routes as needed -->
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -211,20 +204,6 @@
     </body>
     </html>
     
-
-    <script>
-        // Function to update map when a destination is selected
-        document.getElementById("submit").addEventListener("click", function() {
-            var destination = document.getElementById("destination").value;
-            var mapIframe = document.getElementById("map-iframe");
-            mapIframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94339.13503253667!2d12.35999945!3d41.9057263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61e5eafe133b%3A0x25242b10c5ecfe63!2sRome%2C%20Metropolitan%20City%20of%20Rome%2C%20Italy!5e0!3m2!1sen!2sus!4v1648741048199!5m2!1sen!2sus&center=" + destination + "&zoom=10";
-        });
-    </script>
-</body>
-</html>
-
-
-
     <!-- Destination Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
