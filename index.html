@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TRAVELER - Free Travel Website Template</title>
+    <title>Campsite.com</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -101,7 +101,7 @@
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
-            <div class="carousel-inner">
+<div class="carousel-inner">
 				<video controls src="video/pexels-olya-kobruseva-5281523 (720p).mp4" class="w-100" autoplay muted loop></video>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
@@ -124,63 +124,70 @@
 
     <!-- Destination Start -->
     <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
-                <h1>Explore Top Destination</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">View</h6>
+                <h1>Videos</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
+
+<style>
+    .custom-video {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
+<script>
+    function playVideoOnHover(video) {
+		 console.log('Hovering over video');
+        video.play();
+    }
+
+    function pauseVideoOnHoverOut(video) {
+		console.log('Moving out of video');
+        video.pause();
+        video.currentTime = 0;
+    }
+</script>
+		
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-1.jpg" alt="">
+                       <video controls src="video/b3ad5411331fd1ff5036c86abbd8d0f5.mp4" style="width: 100%; height: auto" class="custom-video" autoplay 
+                onmouseover="playVideoOnHover(this)" onmouseout="pauseVideoOnHoverOut(this)"></video>
                         <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">United States</h5>
-                            <span>100 Cities</span>
+                            <h12 class="text-white">Court and Nate</h12>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-2 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-2.jpg" alt="">
+                        <video controls src="video/e68b5d46fb750b4792b851ac80b7e7d5.mp4" class="" autoplay style="width: 100%; height:auto"></video>
                         <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">United Kingdom</h5>
-                            <span>100 Cities</span>
+                            <h12 class="text-white">Ricardo</h12>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-2 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-3.jpg" alt="">
+                      <video controls src="video/84b9c85fcc85013de9c5317dbb0a4be9.mp4" class="" autoplay style="width: 100%; Height: auto"></video>
                         <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Australia</h5>
-                            <span>100 Cities</span>
+                            <h12 class="text-white">Imogen</h12>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-2 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-4.jpg" alt="">
+                        <video controls src="video/c99b154a6c6dd21eac3c8b0ff5fe33ce.mp4" class="" autoplay style="width: 100%; Height: auto"></video>
                         <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">India</h5>
-                            <span>100 Cities</span>
+                            <h12 class="text-white">Helen</h12>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-2 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-5.jpg" alt="">
+                        <video controls src="video/3c30c6014f3a11240cc96b065db655d8.mp4" class="" autoplay style="width: 100%; Height: auto"></video>
                         <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">South Africa</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-6.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Indonesia</h5>
-                            <span>100 Cities</span>
+                            <h12 class="text-white">Abigail</h12>
                         </a>
                     </div>
                 </div>
@@ -286,13 +293,13 @@
                         <div class="card-body rounded-bottom bg-white p-5">
                             <form>
                                 <div class="form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Your name" required="required" />
+                                    <input type="text" class="form-control p-4" placeholder="Name" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Your email" required="required" />
+                                    <input type="email" class="form-control p-4" placeholder="Email" required="required" />
                                 </div>
                                 <div class="form-group">
-                                     <input type="password" class="form-control p-4" placeholder="Your password" required="required" />
+                                     <input type="password" class="form-control p-4" placeholder="Password" required="required" />
                                 </div>
                                 <div>
                                     <button class="btn btn-primary btn-block py-3" type="submit">Sign Up Now</button>
@@ -528,6 +535,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+	
 </body>
 
 </html>
