@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -76,6 +77,9 @@
 .image-container {
     position: absolute;
     left: 0;
+	top: 1px; 
+
+	
 }
 
 
