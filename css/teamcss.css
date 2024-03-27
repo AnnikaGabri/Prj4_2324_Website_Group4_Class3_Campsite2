@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -66,5 +67,19 @@
  
 }
 
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px; /* Adjust as needed */
+}
+
+.image-container {
+    position: absolute;
+    left: 0;
+	top: 1px; 
+
+	
+}
 
 
