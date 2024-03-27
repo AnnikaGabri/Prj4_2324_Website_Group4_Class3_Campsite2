@@ -83,3 +83,17 @@
 }
 
 
+.custom-text-color {
+    color: #E09132; /* Replace "your-color" with your desired text color */
+	transition: color 0.3s ease; /* Add a transition for smooth color change */
+}
+
+
+    
+
+
+.custom-text-color:hover {
+    color: #E09132; /* Blue */
+}
+
+
