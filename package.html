@@ -115,76 +115,77 @@
     <!-- Header End -->
 
     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map with Search Bar</title>
-    <style>
-        /* Style adjustments can be made here */
-        #map-container {
-            width: 100%;
-            height: 500px; /* Adjust the height as needed */
-            position: relative;
-        }
-    </style>
-</head>
-<body>
-    <!-- Booking Section Start -->
-    <div class="container-fluid booking mt-5 pb-5">
-        <div class="container pb-5">
-            <div class="bg-light shadow" style="padding: 30px;">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-6">
-                        <div class="mb-3 mb-md-0">
-                            <select id="destination" class="custom-select px-4" style="height: 47px;">
-                                <option selected disabled>Destination</option>
-                                <option value="41.9027835,12.4963655">Italy, Rome</option>
-                                <!-- Add more destinations as needed -->
-                            </select>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Map with Search Bar</title>
+        <style>
+            /* Style adjustments can be made here */
+            #map-container {
+                width: 100%;
+                height: 500px; /* Adjust the height as needed */
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Booking Section Start -->
+        <div class="container-fluid booking mt-5 pb-5">
+            <div class="container pb-5">
+                <div class="bg-light shadow" style="padding: 30px;">
+                    <div class="row align-items-center" style="min-height: 60px;">
+                        <div class="col-md-6">
+                            <div class="mb-3 mb-md-0">
+                                <select id="destination" class="custom-select px-4" style="height: 47px;">
+                                    <option selected disabled>Destination</option>
+                                    <option value="41.9027835,12.4963655">Italy, Rome</option>
+                                    <!-- Add more destinations as needed -->
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="mb-3 mb-md-0">
-                            <select id="routes" class="custom-select px-4" style="height: 47px;">
-                                <option selected>Routes</option>
-                                <option value="1">Your routes</option>
-                                <option value="2">Following Routes</option>
-                                <option value="3">Explore routes</option>
-                                <!-- Add more routes as needed -->
-                            </select>
+                        <div class="col-md-4">
+                            <div class="mb-3 mb-md-0">
+                                <select id="routes" class="custom-select px-4" style="height: 47px;">
+                                    <option selected>Routes</option>
+                                    <option value="1">Your routes</option>
+                                    <option value="2">Following Routes</option>
+                                    <option value="3">Explore routes</option>
+                                    <!-- Add more routes as needed -->
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button id="submit" class="btn btn-primary btn-block" type="button" style="height: 47px; margin-top: -2px;">Submit</button>
+                        <div class="col-md-2">
+                            <button id="submit" class="btn btn-primary btn-block" type="button" style="height: 47px; margin-top: -2px;">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Booking Section End -->
-
-    <!-- Map Section Start -->
-    <div id="map-container">
-        <iframe id="map-iframe"
-            width="100%"
-            height="100%"
-            frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed?pb=!1m1!4m8!1m2!2m1!1seurope!3m4!1s0x0:0x0!8m2!3d47.6062095!4d5.9924463" allowfullscreen>
-        </iframe>
-    </div>
-    <!-- Map Section End -->
-
-    <script>
-        // Function to update map when a destination is selected
-        document.getElementById("submit").addEventListener("click", function() {
-            var destination = document.getElementById("destination").value;
-            var mapIframe = document.getElementById("map-iframe");
-            mapIframe.src = "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105955.6255041075!2d12.447796199999999!3d41.9027835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1648821805756!5m2!1sen!2sus&center=" + destination + "&zoom=12";
-        });
-    </script>
-</body>
-</html>
+        <!-- Booking Section End -->
+    
+        <!-- Map Section Start -->
+        <div id="map-container">
+            <iframe id="map-iframe"
+                width="100%"
+                height="100%"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58356134.02443466!2d-9.04547957130359!3d48.69096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1648822978932" allowfullscreen>
+            </iframe>
+        </div>
+        <!-- Map Section End -->
+    
+        <script>
+            // Function to update map when a destination is selected
+            document.getElementById("submit").addEventListener("click", function() {
+                var destination = document.getElementById("destination").value;
+                var mapIframe = document.getElementById("map-iframe");
+                mapIframe.src = "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105955.6255041075!2d12.447796199999999!3d41.9027835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1648821805756!5m2!1sen!2sus&center=" + destination + "&zoom=12";
+            });
+        </script>
+    </body>
+    </html>
+    
 
 
     <!-- Destination Start -->
