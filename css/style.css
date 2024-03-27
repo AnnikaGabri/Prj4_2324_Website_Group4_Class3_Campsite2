@@ -598,11 +598,12 @@ pre code {
 .container-md,
 .container-lg,
 .container-xl {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+ 
 }
 
 @media (min-width: 576px) {
@@ -3935,7 +3936,7 @@ input[type="button"].btn-block {
 }
 
 .nav-link.disabled {
-  color: #6c757d;
+  color: #E09132;
   pointer-events: none;
   cursor: default;
 }
@@ -3957,14 +3958,14 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #E09132;
   background-color: transparent;
   border-color: transparent;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #E09132;
   background-color: #F3F3F3;
   border-color: #dee2e6 #dee2e6 #F3F3F3;
 }
@@ -3976,7 +3977,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #7AB730;
+  background-color: #E09132;
 }
 
 .nav-fill > .nav-link,
@@ -6156,7 +6157,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #FFFFFF !important;
+  background-color: #FFEFCD !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -9268,10 +9269,12 @@ button.bg-dark:focus {
 
 .text-primary {
     color: #E09132 !important;
+
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #527a20 !important;
+  color: #E09132 !important;
+  
 }
 
 .text-secondary {
@@ -9283,11 +9286,11 @@ a.text-secondary:hover, a.text-secondary:focus {
 }
 
 .text-success {
-  color: #28a745 !important;
+  color: #E09132 !important;
 }
 
 a.text-success:hover, a.text-success:focus {
-  color: #19692c !important;
+  color: #E09132 !important;
 }
 
 .text-info {
