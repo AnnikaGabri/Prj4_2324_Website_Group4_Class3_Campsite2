@@ -66,5 +66,16 @@
  
 }
 
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px; /* Adjust as needed */
+}
+
+.image-container {
+    position: absolute;
+    left: 0;
+}
 
 
