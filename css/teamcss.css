@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E09132;
+  padding: 10px 20px;
+}
+
+.logo {
+  margin-bottom: 20px; /* Space between logo and navigation links */
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: block; /* Display links as block elements */
+  margin-bottom: 10px; /* Space between navigation links */
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+.navbar-item {
+  color: #FFEFCD; /* Default color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFEFCD;
+  padding: 10px 20px;
+}
+
+.navbar-item:hover {
+  
+}
+
+.navbar-item.custom-color {
+  color: #E09132; /* Change this to the desired color */
+}
+
+
+
+
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+ 
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px; /* Adjust as needed */
+}
+
+.image-container {
+    position: absolute;
+    left: 0;
+	top: 1px; 
+
+	
+}
+
+
+.custom-text-color {
+    color: white; /* Replace "your-color" with your desired text color */
+	transition: color 0.3s ease; /* Add a transition for smooth color change */
+}
+
+
+  
+
+.custom-text-color:hover {
+    color: white; /* Blue */
+}
+
+
+
+
+/* Stijlen voor de zoekbalk */
+.search-container {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] {
+    padding: 8px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 8px;
+    background-color: #E09132;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #E09132;
+}
+
+
+
+
+.corner-element {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 20px; /* Optional: adjust as needed */
+    margin-right: 20px; /* Optional: adjust as needed */
+    /* Additional styles for your element */
+}
+
+
+
