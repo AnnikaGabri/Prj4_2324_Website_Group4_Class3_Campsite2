@@ -4002,7 +4002,7 @@ input[type="button"].btn-block {
 }
 
 .navbar {
-    position: fixed;
+    position: relative;
     display: list-item;
     flex-wrap: wrap;
     align-items: center;
