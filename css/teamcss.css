@@ -145,5 +145,9 @@ justify-content: flex-start;
     /* Additional styles for your element */
 }
 
-
+/* blogpage small images */
+.img-fluid2 {
+  max-width: 100%;
+  height: auto;
+}
 
