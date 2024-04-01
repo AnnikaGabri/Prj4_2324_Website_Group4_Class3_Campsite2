@@ -151,3 +151,11 @@ justify-content: flex-start;
   height: auto;
 }
 
+/* font size blogpage */
+.font-amster {
+    font-family: "Amster Bold", Amster, "Amster Black", "Amster Black Italic", "Amster Gris", "Amster Light", "Amster Light Italic", "Amster Negra", "Amster Thin", "Amster Thin Italic";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    color: #E09132;
+}

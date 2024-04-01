@@ -4675,7 +4675,7 @@ a.badge:hover, a.badge:focus {
 
 .badge-primary {
   color: #fff;
-  background-color: #7AB730;
+  background-color: #424530;
 }
 
 a.badge-primary:hover, a.badge-primary:focus {
@@ -9756,7 +9756,7 @@ h6,
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #F4B000;
+  background: #E09132;
 }
 
 .blog-date::after {
