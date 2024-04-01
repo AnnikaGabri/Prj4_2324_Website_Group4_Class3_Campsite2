@@ -95,7 +95,9 @@ justify-content: flex-start;
 	transition: color 0.3s ease; /* Add a transition for smooth color change */
 }
 
-
+.black {
+	color: #424530
+}
   
 
 .custom-text-color:hover {
@@ -146,4 +148,38 @@ justify-content: flex-start;
 }
 
 
+
+/* Styles for the button container */
+.button-container {
+  display: flex; /* Arrange buttons in a row */
+}
+
+/* Styles for the search button */
+.search-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin-right: 10px; /* Add space between buttons */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Styles for the message button */
+.message-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #28a745; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.message-button:hover {
+  background-color: #218838; /* Change background color on hover */
+}
 
