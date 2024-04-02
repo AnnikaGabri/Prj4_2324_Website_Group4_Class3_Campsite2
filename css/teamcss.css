@@ -147,6 +147,12 @@ justify-content: flex-start;
     /* Additional styles for your element */
 }
 
+/* blogpage small images */
+.img-fluid2 {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 /* Styles for the button container */
@@ -181,5 +187,15 @@ justify-content: flex-start;
 
 .message-button:hover {
   background-color: #218838; /* Change background color on hover */
+}
+
+
+/* font size blogpage */
+.font-amster {
+    font-family: "Amster Bold", Amster, "Amster Black", "Amster Black Italic", "Amster Gris", "Amster Light", "Amster Light Italic", "Amster Negra", "Amster Thin", "Amster Thin Italic";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    color: #E09132;
 }
 
