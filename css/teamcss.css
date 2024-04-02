@@ -83,16 +83,25 @@
 }
 
 
-.custom-text-color {
-    color: white; /* Replace "your-color" with your desired text color */
-	transition: color 0.3s ease; /* Add a transition for smooth color change */
+.try {
+  display: flex;
+justify-content: flex-start; 
+	
 }
 
 
+.custom-text-color {
+    color: #FFFFFF; /* Replace "your-color" with your desired text color */
+	transition: color 0.3s ease; /* Add a transition for smooth color change */
+}
+
+.black {
+	color: #424530
+}
   
 
 .custom-text-color:hover {
-    color: white; /* Blue */
+    color: #FFFFFF; /* Blue */
 }
 
 
@@ -103,11 +112,12 @@
     float: right;
     display: flex;
     align-items: center;
+	
 }
 
 .search-container input[type=text] {
     padding: 8px;
-    margin-right: 8px;
+    margin-right: 10px;
     border: none;
     border-radius: 4px;
 }
@@ -129,7 +139,7 @@
 
 
 .corner-element {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     margin-top: 20px; /* Optional: adjust as needed */
@@ -137,5 +147,74 @@
     /* Additional styles for your element */
 }
 
+/* blogpage small images */
+.img-fluid2 {
+  max-width: 100%;
+  height: auto;
+}
 
 
+
+/* Styles for the button container */
+.button-container {
+  display: flex; /* Arrange buttons in a row */
+}
+
+/* Styles for the search button */
+.search-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin-right: 10px; /* Add space between buttons */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Styles for the message button */
+.message-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #28a745; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.message-button:hover {
+  background-color: #218838; /* Change background color on hover */
+}
+
+
+/* font size blogpage */
+.font-amster {
+    font-family: "Amster Bold", Amster, "Amster Black", "Amster Black Italic", "Amster Gris", "Amster Light", "Amster Light Italic", "Amster Negra", "Amster Thin", "Amster Thin Italic";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    color: #E09132;
+}
+
+
+.greencolor {
+	color: #424530;
+}
+
+/* video destination page */
+    .video-container {
+        display: flex;
+        margin: 20px 0;
+    }
+    
+    .video {
+        width: 25%; /* Elke video container neemt 25% van de breedte in */
+        margin-right: 10px; /* Ruimte tussen de video containers */
+    }
+    
+    .video video {
+        width: 100%; /* De video's binnen elke container nemen 100% van de breedte in */
+    }
