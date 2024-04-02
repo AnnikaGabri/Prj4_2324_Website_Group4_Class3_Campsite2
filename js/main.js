@@ -18,6 +18,19 @@
         $(window).resize(toggleNavbarMethod);
     });
     
+	// Get the video element
+var video = document.getElementById("myVideo");
+
+// Add event listeners for mouseenter and mouseleave events
+video.addEventListener("mouseenter", function() {
+  // Play the video when the cursor enters the video area
+  video.play();
+});
+
+video.addEventListener("mouseleave", function() {
+  // Pause the video when the cursor leaves the video area
+  video.pause();
+});
     
     // Back to top button
     $(window).scroll(function () {
