@@ -102,7 +102,7 @@
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
 <div class="carousel-inner">
-				<video controls src="video/pexels-olya-kobruseva-5281523 (720p).mp4" class="w-100" autoplay muted loop></video>
+				<video controls src="video/VID_39290306_105010_432.mp4" class="w-100" autoplay muted loop></video>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-3 custom-text-color mb-md-4">Let's Discover The World Together</h1>
@@ -137,56 +137,62 @@
 </style>
 
 <script>
-    function playVideoOnHover(video) {
-		 console.log('Hovering over video');
-        video.play();
-    }
+        document.addEventListener("DOMContentLoaded", function () {
+            const videos = document.querySelectorAll(".custom-video");
 
-    function pauseVideoOnHoverOut(video) {
-		console.log('Moving out of video');
-        video.pause();
-        video.currentTime = 0;
-    }
-</script>
+            videos.forEach(function (video) {
+                video.addEventListener("mouseover", function () {
+                    console.log('Hovering over video');
+                    video.play();
+                });
+
+                video.addEventListener("mouseout", function () {
+                    console.log('Moving out of video');
+                    video.pause();
+                    video.currentTime = 0;
+                });
+            });
+        });
+    </script>
 		
             <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                       <video controls src="video/b3ad5411331fd1ff5036c86abbd8d0f5.mp4" style="width: 100%; height: auto" class="custom-video" autoplay 
+                    <div class=" mb-2">
+                       <video id="myVideo" controls src="video/b3ad5411331fd1ff5036c86abbd8d0f5.mp4" type="video/mp4" width="100%" height="auto" class="custom-video"
                 onmouseover="playVideoOnHover(this)" onmouseout="pauseVideoOnHoverOut(this)"></video>
-                        <a class="destination-overlay text-white text-decoration-none" href="">
+                        <a class="text-white text-decoration-none">
                             <h12 class="text-white">Court and Nate</h12>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <video controls src="video/e68b5d46fb750b4792b851ac80b7e7d5.mp4" class="" autoplay style="width: 100%; height:auto"></video>
-                        <a class="destination-overlay text-white text-decoration-none" href="">
+                    <div class=" mb-2">
+                        <video controls src="video/e68b5d46fb750b4792b851ac80b7e7d5.mp4" class="custom-video" type="video/mp4" width="100%" height="auto"  onmouseover="playVideoOnHover(this)" onmouseout="pauseVideoOnHoverOut(this)"></video>
+                        <a class="text-white text-decoration-none" href="">
                             <h12 class="text-white">Ricardo</h12>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                      <video controls src="video/84b9c85fcc85013de9c5317dbb0a4be9.mp4" class="" autoplay style="width: 100%; Height: auto"></video>
-                        <a class="destination-overlay text-white text-decoration-none" href="">
+                    <div class=" mb-2">
+                      <video controls src="video/84b9c85fcc85013de9c5317dbb0a4be9.mp4" class="custom-video" type="video/mp4" width="100%" height="auto"  onmouseover="playVideoOnHover(this)" onmouseout="pauseVideoOnHoverOut(this)"></video>
+                        <a class="text-white text-decoration-none" href="">
                             <h12 class="text-white">Imogen</h12>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <video controls src="video/c99b154a6c6dd21eac3c8b0ff5fe33ce.mp4" class="" autoplay style="width: 100%; Height: auto"></video>
-                        <a class="destination-overlay text-white text-decoration-none" href="">
+                    <div class=" mb-2">
+                        <video controls src="video/c99b154a6c6dd21eac3c8b0ff5fe33ce.mp4" class="custom-video" type="video/mp4" width="100%" height="auto"  onmouseover="playVideoOnHover(this)" onmouseout="pauseVideoOnHoverOut(this)"></video>
+                        <a class="text-white text-decoration-none" href="">
                             <h12 class="text-white">Helen</h12>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <video controls src="video/3c30c6014f3a11240cc96b065db655d8.mp4" class="" autoplay style="width: 100%; Height: auto"></video>
-                        <a class="destination-overlay text-white text-decoration-none" href="">
+                    <div class="mb-2">
+                        <video controls src="video/3c30c6014f3a11240cc96b065db655d8.mp4"class="custom-video" type="video/mp4" width="100%" height="auto"  onmouseover="playVideoOnHover(this)" onmouseout="pauseVideoOnHoverOut(this)"></video>
+                        <a class="text-white text-decoration-none" href="">
                             <h12 class="text-white">Abigail</h12>
                         </a>
                     </div>
@@ -195,12 +201,6 @@
         </div>
     </div>
     <!-- Destination Start -->
-
-
-   
-   
-
-
 
 
     <!-- Blog Start -->
@@ -495,7 +495,7 @@
     <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
