@@ -205,14 +205,16 @@ justify-content: flex-start;
 }
 
 /* video destination page */
-.object-fit: {
-  responsive: true; 
-  property: object-fit; 
-  values: ; 
-    contain: contain; 
-    cover: cover; 
-    fill: fill; 
-    scale: scale-down; 
-    none: none; 
-}
-
+    .video-container {
+        display: flex;
+        margin: 20px 0;
+    }
+    
+    .video {
+        width: 25%; /* Elke video container neemt 25% van de breedte in */
+        margin-right: 10px; /* Ruimte tussen de video containers */
+    }
+    
+    .video video {
+        width: 100%; /* De video's binnen elke container nemen 100% van de breedte in */
+    }
