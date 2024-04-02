@@ -6102,7 +6102,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #7AB730 !important;
+    background-color: #E09132 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6230,7 +6230,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #7AB730 !important;
+    border-color: #E09132 !important;
 }
 
 .border-secondary {
@@ -9237,7 +9237,8 @@ button.bg-dark:focus {
 }
 
 .text-uppercase {
-  text-transform: uppercase !important;
+    text-transform: uppercase !important;
+    color: #424530;	
 }
 
 .text-capitalize {
@@ -9331,7 +9332,7 @@ a.text-light:hover, a.text-light:focus {
 }
 
 .text-dark {
-    color: #424530 !important;
+    color: #040404 !important;
     font-family: "Amster Bold", Amster, "Amster Black", "Amster Black Italic", "Amster Gris", "Amster Light", "Amster Light Italic", "Amster Negra", "Amster Thin", "Amster Thin Italic";
     font-weight: lighter;     
 }
