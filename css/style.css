@@ -9588,7 +9588,7 @@ h6,
 }
 
 .page-header {
-  background: url("../img/headerblog.jpg"), no-repeat center center;
+  background: url("../img/"), no-repeat center center;
   background-size: cover;
 }
 
