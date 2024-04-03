@@ -317,8 +317,11 @@ buttons {
   width: 50%;
 }
 
-
-
+/*location class*/
+.Container-box { 
+  width: 964.8px;
+  height: 432px;
+} 
  
            
         
