@@ -314,17 +314,8 @@ buttons {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 50%;
+  width: 50%; 
 }
-
-/*location class*/
-.Container-box { 
-  width: 964.8px;
-  height: 432px;
-} 
- 
-           
-        
         
         .profile {
             flex: 1;
