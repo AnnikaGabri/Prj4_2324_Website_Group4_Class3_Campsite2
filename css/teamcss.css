@@ -314,14 +314,8 @@ buttons {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 50%;
+  width: 50%; 
 }
-
-
-
- 
-           
-        
         
         .profile {
             flex: 1;
@@ -362,4 +356,4 @@ buttons {
 
 /* single.html page */ 
 
-.tagperson { color: #E09132; }
+.tagperson { color: #424530; }
