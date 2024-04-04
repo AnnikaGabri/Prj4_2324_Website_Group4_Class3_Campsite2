@@ -5010,6 +5010,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .media {
   display: flex;
   align-items: flex-start;
+	
 }
 
 .media-body {
